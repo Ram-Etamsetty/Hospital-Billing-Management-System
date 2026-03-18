@@ -70,7 +70,7 @@ hospital-billing-management/
 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/hospital-billing-management.git
+git clone https://github.com/Ram-Etamsetty/Hospital-Billing-Management-System.git
 cd hospital-billing-management
 ```
 
@@ -117,4 +117,4 @@ node index.js
 ## Author
 
 Your Name
-https://github.com/your-username
+https://github.com/Ram-Etamsetty
