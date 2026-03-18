@@ -115,6 +115,5 @@ node index.js
 ---
 
 ## Author
-
-Your Name
+Ram Etamsetty
 https://github.com/Ram-Etamsetty
