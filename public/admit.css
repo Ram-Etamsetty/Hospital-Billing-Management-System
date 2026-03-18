@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #2D9CDB; 
+    --secondary-color: #27AE60; 
+    --background-color: #ECF0F3; 
+    --text-color: #2C3E50; 
+    --input-border: #BDC3C7;
+    --button-hover: #1B7DCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.form-wrapper {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: left;
+}
+
+::placeholder {
+    color: #999;
+    opacity: 0.8;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.submit-btn, .home {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover, .home:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-3px);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 10px 5px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .form-wrapper {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .submit-btn, .home {
+        font-size: 14px;
+    }
+}

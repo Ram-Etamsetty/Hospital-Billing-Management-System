@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-left: -360px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 80%;
+    }
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1565c0; 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.hospital-symbol {
+    font-size: 120px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    margin-top: -29px;
+    margin-left: -28px;
+
+}
+
+h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #1565c0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #0d47a1;
+}
+
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #1565c0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+@keyframes subtleBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; } 
+}
+
+.hospital-symbol {
+    animation: subtleBlink 1s infinite;
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 24px;
+    }
+    .hospital-symbol {
+        font-size: 90px;
+    }
+    .login-container {
+        width: 90%;
+    }
+}
